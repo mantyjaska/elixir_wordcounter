@@ -26,7 +26,6 @@ defmodule WordFrequency do
   end
 
   def count_words(cleaned_words) do
-    #counted_words = %{}
     counted_words = Enum.reduce(cleaned_words, %{}, fn(word, acc) ->
       case Map.has_key?(acc, word) do
          :true ->
