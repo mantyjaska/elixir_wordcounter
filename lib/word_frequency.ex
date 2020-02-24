@@ -11,11 +11,8 @@ defmodule WordFrequency do
 
   ## Examples
 
-      iex(136)> WordFrequency.run
-      on:918
-      ei:551
-      itse:398
-      vanha:337
+      iex(1)> WordFrequency.get_all_words("hello world!")
+      ["hello", "world"]
 
   """
   def get_text(text_file) do
@@ -29,7 +26,7 @@ defmodule WordFrequency do
   end
 
   def count_words(cleaned_words) do
-    counted_words = %{}
+    #counted_words = %{}
     counted_words = Enum.reduce(cleaned_words, %{}, fn(word, acc) ->
       case Map.has_key?(acc, word) do
          :true ->
