@@ -1,15 +1,21 @@
 defmodule WordFrequency do
   @moduledoc """
   Documentation for WordFrequency.
+  Simple program to get word frequency count of a file. No real use, more to find out how Elixir works.
   """
 
+  @vsn 0.1
+
   @doc """
-  Hello world.
+  Almost Hello world.
 
   ## Examples
 
-      iex> WordFrequency.hello()
-      :world
+      iex(136)> WordFrequency.run
+      on:918
+      ei:551
+      itse:398
+      vanha:337
 
   """
   def get_text(text_file) do
